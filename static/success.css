@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding: 20px;
+  background-image: url(./checkmark.png);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #7d58ac;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: solid;
+}
+
+.main-heading {
+  font-size: 24px;
+  color: #aca981;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.head-details {
+  color: #c4bd65;
+  font-size: 24px;
+}
+
+.the-details {
+  color: #58d808;
+}
