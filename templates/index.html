@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Cloud Deployment</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Multi-Cloud Deployment</h1>
+
+      <div class="deployment-section">
+        <h2>Deploy Resources:</h2>
+        <form action="/deploy" method="post">
+          <label for="action">Select an action:</label>
+          <select name="action" id="action">
+            <option value="aws_ec2">Deploy AWS EC2 Instance</option>
+            <option value="gcp_compute">Deploy GCP Compute Instance</option>
+            <option value="aws_rds">Deploy AWS RDS Database</option>
+            <option value="gcp_sql">Deploy GCP SQL Database</option>
+            <option value="aws_gcp">Deploy Multi-Cloud AWS-GCP</option>
+          </select>
+          <button type="submit">Deploy</button>
+        </form>
+      </div>
+
+      <div class="destruction-section">
+        <h2>Destroy Resources:</h2>
+        <form action="/destroy" method="post">
+          <label for="action">Select an action:</label>
+          <select name="action" id="action">
+            <option value="aws_ec2">Destroy AWS EC2 Instance</option>
+            <option value="gcp_compute">Destroy GCP Compute Instance</option>
+            <option value="aws_rds">Destroy AWS RDS Database</option>
+            <option value="gcp_sql">Destroy GCP SQL Database</option>
+            <option value="aws_gcp">Destroy Multi-Cloud AWS-GCP</option>
+          </select>
+          <button type="submit">Destroy</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
